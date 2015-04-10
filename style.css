@@ -1,0 +1,88 @@
+/* Make the table headers within the table body non-bold italic */
+tbody > tr > th
+{
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* Make the table data in the first row within the table body red */
+tbody > tr:first-of-type > td
+{
+	color: red;
+}
+
+/* Make the table data blue two rows down from the first row */
+tbody > tr:first-of-type + tr + tr > td
+{
+	color: blue;
+}
+
+/* Color the even numbered rows */
+tbody > tr:nth-child(2n) 
+{
+	background-color: #7ae;
+}
+
+/* Color the odd numbered rows */
+tbody > tr:nth-child(odd)
+{
+	background-color: #5f8;
+}
+
+dt:hover
+{
+	background-color: purple;
+}
+
+.outercontent
+{
+	padding-top: 20px;
+	background-color: #f77;
+	width: 75%;
+}
+
+.innercontent
+{
+	text-align: center;
+	background-color: #7ae;
+	width: 75%;
+}
+
+/* The following styling is not required for the assignment */
+
+ul {
+
+  list-style: none;
+}
+
+fieldset
+{
+}
+
+caption
+{
+	font: bold 90% sans-serif ;
+}
+
+table
+{
+	width: 300px;
+	border: 2px solid black;
+	border-collapse: collapse;
+	empty-cells:show;
+	background-color: #eee;
+}
+
+th
+{
+	font: 1.2em sans-serif;
+}
+
+th, td
+{
+	border: 1px solid #bbb;
+	text-align: right;
+	padding: .2em;
+	padding-right: .5em;
+}
+
