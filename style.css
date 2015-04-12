@@ -1,8 +1,9 @@
 /*Make the table headers bold*/
-thead > th
+thead th
 {
 	font-weight: bold;
 }
+
 /* Make the table headers within the table body non-bold italic */
 tbody th
 {
@@ -34,19 +35,30 @@ tbody > tr:nth-child(odd)
 	background-color: #5f8;
 }
 
+/* Hovering over a definition title causes a purple background */
 dt:hover
 {
 	background-color: purple;
 }
 
+/* Push the outercontent div down 20px(required) */
+/* Also -cause the forms to float (not required) */
+form > fieldset
+{
+	font-weight: bold;
+	float: left;
+	margin-bottom: 20px;
+}
+
+/* Make a pink background 3/4 page width */
 .outercontent
 {
 	clear: left;
-	margin-top: 20px;
 	background-color: #f77;
 	width: 75%;
 }
 
+/* Make a blue background 3/4 of outercontent class width and center it */
 .innercontent
 {
 	margin-left: 12.5%;
@@ -55,6 +67,7 @@ dt:hover
 	width: 75%;
 }
 
+/* Float the image causing the text to wrap */
 img
 {
 	float: left;
@@ -62,33 +75,45 @@ img
 
 
 
-/* The following styling is not required for the assignment */
+/* ***The following styling is not required for this assignment*** */
 
-ul {
+/* Make the caption look nicer */
+caption
+{
+	font: bold 150% "Monotype Corsiva" cursive;
+}
 
+/* Remove bullets from radio buttons */
+ul 
+{
   list-style: none;
 }
 
-fieldset
+/* */
+fieldset > fieldset
 {
+	border: 2px solid gray;
 	margin: .5em;
 	padding: .4em;
 }
 
-form > fieldset
+form > fieldset > legend:first-of-type
 {
+	font: bold 1.3em sans-serif;
+}
 
-	float: left;
+fieldset > input
+{
+	width: 150px;
+	float: right;
+	padding-right: 5px;
+	margin-left: 10px;
 }
 
 tfoot > tr > th + th
 {
 	text-align: left;
 	text-indent: 1em;
-}
-caption
-{
-	font: bold 130% sans-serif ;
 }
 
 table
