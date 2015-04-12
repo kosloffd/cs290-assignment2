@@ -35,8 +35,8 @@ tbody > tr:nth-child(odd)
 	background-color: #5f8;
 }
 
-/* Hovering over a definition title causes a purple background */
-dt:hover
+/* Hovering over a definition title causes a purple background behind definition data */
+dt:hover + dd
 {
 	background-color: purple;
 }
